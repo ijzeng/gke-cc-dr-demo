@@ -6,5 +6,5 @@ metadata:
   annotations:
     cnrm.cloud.google.com/deletion-policy: "delete"
 spec:
-  location: US
+  location: EU
   storageClass: STANDARD
