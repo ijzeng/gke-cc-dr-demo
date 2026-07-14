@@ -1,0 +1,11 @@
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucket
+metadata:
+  name: demo-resilient-bucket-ccc-jz # Replace with your project suffix
+  namespace: config-control
+  annotations:
+    # CRITICAL SAFEGUARD: Prevents the bucket from being deleted if the K8s object is dropped
+    #cnrm.cloud.google.com/deletion-policy: "abandon"
+spec:
+  location: US
+  storageClass: STANDARD
