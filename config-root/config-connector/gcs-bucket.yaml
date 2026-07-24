@@ -5,6 +5,7 @@ metadata:
   namespace: config-control
   labels:
     env: demo
+    site: primary
   annotations:
     cnrm.cloud.google.com/deletion-policy: "delete"
 spec:
