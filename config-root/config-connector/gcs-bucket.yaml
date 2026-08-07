@@ -3,7 +3,7 @@ kind: StorageBucket
 metadata:
   name: cc-resilient-bucket-jonizeng-infra
   namespace: config-control
-  label:
+  labels:
     test: value
   annotations:
     cnrm.cloud.google.com/deletion-policy: "delete"
